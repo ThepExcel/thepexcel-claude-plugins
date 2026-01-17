@@ -8,6 +8,13 @@
   },
   "plugins": [
     {
+      "name": "art-director",
+      "description": "Creates professional AI image/video prompts with photographer's and cinematographer's eye",
+      "source": "./plugins/art-director",
+      "category": "productivity"
+    }
+,
+    {
       "name": "create-visualization",
       "description": "Creates diagrams and animations for STEM education using Matplotlib and Manim",
       "source": "./plugins/create-visualization",
@@ -50,6 +57,20 @@
     }
 ,
     {
+      "name": "geometric-elements",
+      "description": "Skill from ThepExcel/claude-skills",
+      "source": "./plugins/geometric-elements",
+      "category": "productivity"
+    }
+,
+    {
+      "name": "graphic-designer",
+      "description": "Designs graphics for thumbnails, social media, banners using design principles",
+      "source": "./plugins/graphic-designer",
+      "category": "productivity"
+    }
+,
+    {
       "name": "manage-business-strategy",
       "description": "Business management frameworks for strategic analysis, decision making, and growth strategy",
       "source": "./plugins/manage-business-strategy",
@@ -74,13 +95,6 @@
       "name": "problem-solving",
       "description": "Systematic problem-solving with Good Teacher mode, inspired by Polya's How to Solve It",
       "source": "./plugins/problem-solving",
-      "category": "productivity"
-    }
-,
-    {
-      "name": "prompt-ai-image-video",
-      "description": "Creates professional AI image/video prompts with artist's eye for composition and lighting",
-      "source": "./plugins/prompt-ai-image-video",
       "category": "productivity"
     }
 ,
