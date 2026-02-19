@@ -8,13 +8,6 @@
   },
   "plugins": [
     {
-      "name": "art-director",
-      "description": "Creates professional AI image/video prompts with photographer's and cinematographer's eye",
-      "source": "./plugins/art-director",
-      "category": "productivity"
-    }
-,
-    {
       "name": "create-visualization",
       "description": "Creates diagrams and animations for STEM education using Matplotlib and Manim",
       "source": "./plugins/create-visualization",
