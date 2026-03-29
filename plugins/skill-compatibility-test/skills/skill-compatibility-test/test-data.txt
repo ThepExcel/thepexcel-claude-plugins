@@ -1,3 +1,0 @@
-COMPATIBILITY_TEST: This file is used to test Read and Grep tools.
-If you can see this text, the Read tool works correctly.
-Line 3: extra data for Grep matching.
