@@ -92,9 +92,23 @@
     }
 ,
     {
+      "name": "skill-compatibility-test",
+      "description": "Skill from ThepExcel/claude-skills",
+      "source": "./plugins/skill-compatibility-test",
+      "category": "productivity"
+    }
+,
+    {
       "name": "skill-creator-thepexcel",
       "description": "Guide for creating effective Claude skills with specialized knowledge and workflows",
       "source": "./plugins/skill-creator-thepexcel",
+      "category": "productivity"
+    }
+,
+    {
+      "name": "skilljar-scraper",
+      "description": "Skill from ThepExcel/claude-skills",
+      "source": "./plugins/skilljar-scraper",
       "category": "productivity"
     }
 ,
