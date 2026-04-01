@@ -27,5 +27,12 @@
       "source": "./plugins/generate-creative-ideas",
       "category": "productivity"
     }
+,
+    {
+      "name": "shift-training-year",
+      "description": "Skill from ThepExcel/claude-skills",
+      "source": "./plugins/shift-training-year",
+      "category": "productivity"
+    }
   ]
 }
