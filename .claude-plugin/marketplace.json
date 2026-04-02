@@ -29,9 +29,23 @@
     }
 ,
     {
+      "name": "kie-ai",
+      "description": "Skill from ThepExcel/claude-skills",
+      "source": "./plugins/kie-ai",
+      "category": "productivity"
+    }
+,
+    {
       "name": "shift-training-year",
       "description": "Skill from ThepExcel/claude-skills",
       "source": "./plugins/shift-training-year",
+      "category": "productivity"
+    }
+,
+    {
+      "name": "show-gallery",
+      "description": "Skill from ThepExcel/claude-skills",
+      "source": "./plugins/show-gallery",
       "category": "productivity"
     }
   ]
