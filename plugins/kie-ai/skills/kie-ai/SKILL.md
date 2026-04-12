@@ -113,17 +113,14 @@ kie_grok_{taskId_last8}_{index}.jpg
 
 ---
 
-## Prompt Rules — เหมือน Grok ผ่าน fal.ai
+## Prompt Rules
 
-| Rule | Detail |
-|------|--------|
-| **Hybrid prompt** | English เป็นหลัก + Thai keywords สำหรับ identity/สถานที่ |
-| **ห้ามบอก body size** | Grok จะ cartoon — ใช้ชุด + มุมกล้องแทน |
-| **Subject สั้น Scene ยาว** | Face desc 1-2 ประโยค, scene/lighting 3-5 ประโยค |
-| **Negative makeup** | "no blush, no foundation, bare skin" ใน prompt |
-| **Negative หน้าฝรั่ง** | ไม่ต้องใส่ negative prompt (API ไม่รองรับ) — ใช้ Thai keywords anchor แทน |
-| **ห้าม flushed/หน้าแดง** | ห้ามใช้ `flushed`, `pink cheeks`, `burning red` |
-| **Max prompt length** | ยาวได้เต็มที่ ไม่มี limit ที่ทดสอบเจอ |
+> Grok prompt syntax rules have moved to the shared model-card.
+> See [grok-image.md](../art-engine/references/model-cards/grok-image.md) for:
+> - Hybrid prompt strategy (English + Thai)
+> - Forbidden words
+> - Subject short / Scene long rule
+> - ห้ามบอก body size
 
 ## Implementation Guide
 
@@ -253,3 +250,10 @@ Authorization: Bearer <KIE_API_KEY>
 | Poll status | `GET /api/v1/jobs/recordInfo` | `GET /api/v1/veo/record-info` |
 | File upload | `POST kieai.redpandaai.co/api/file-stream-upload` | (same) |
 | Base URL | `https://api.kie.ai` | `https://api.kie.ai` |
+
+## Related Skills
+
+- `/art-engine` - upstream: model selection and prompt syntax translation
+- `/fal-ai` - alternative execution path for Grok (same model, different API - fal.ai direct vs Kie.ai proxy)
+- `/art-director` - upstream: creative brief crafting
+- `/sira-image-prefer` - taste DNA for prompt preferences
