@@ -22,13 +22,6 @@
     }
 ,
     {
-      "name": "generate-creative-ideas",
-      "description": "Creative problem-solving and ideation with evaluation, development pipeline, content creator mode, and AI-optimized techniques",
-      "source": "./plugins/generate-creative-ideas",
-      "category": "productivity"
-    }
-,
-    {
       "name": "kie-ai",
       "description": "Skill from ThepExcel/claude-skills",
       "source": "./plugins/kie-ai",
