@@ -62,3 +62,7 @@ Step 3: Run script
   python "<skill-path>/scripts/shift_year.py" "C:\...\Contoso"
 Step 4: Spot-check a few rows from each file
 ```
+
+## Related Skills
+
+- `/xlsx-thepexcel` — Read/edit XLSX files directly; use when year-shifted data needs further spreadsheet manipulation
