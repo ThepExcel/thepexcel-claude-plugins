@@ -1,6 +1,8 @@
 """
 Shift years in training data files (CSV + XLSX) by N years.
 
+path-lint-skip: CLI example paths are placeholders
+
 Usage:
     python shift_year.py <folder_path> [--shift N] [--no-backup]
 
