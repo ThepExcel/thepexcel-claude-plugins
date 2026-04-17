@@ -11,8 +11,7 @@ Gen image/video ผ่าน Kie.ai REST API — proxy สำหรับ Grok I
 ## Path Shortcuts
 
 ```
-ENV    = D:/.env.shared          # KIE_API_KEY อยู่ที่นี่
-OUT    = /mnt/d/ClaudeMediaGen/output-fal   # ใช้ร่วมกับ fal output
+OUT    = D:/ClaudeMediaGen/output-fal   # ใช้ร่วมกับ fal output
 BASE   = https://api.kie.ai/api/v1/jobs
 ```
 
@@ -20,7 +19,7 @@ BASE   = https://api.kie.ai/api/v1/jobs
 
 | Var | ที่อยู่ | วิธีอ่าน |
 |-----|--------|---------|
-| `KIE_API_KEY` | `D:/.env.shared` | อ่าน line ที่ขึ้นต้นด้วย `KIE_API_KEY=` แล้ว strip quotes |
+| `KIE_API_KEY` | Windows User Env | `os.environ["KIE_API_KEY"]` (set via `setx` หรือ `[Environment]::SetEnvironmentVariable`) |
 
 ## Model Selection
 
@@ -126,7 +125,7 @@ kie_grok_{taskId_last8}_{index}.jpg
 
 ### สร้าง gen script ใน Python
 
-1. **อ่าน API key** จาก `D:/.env.shared` → หา line `KIE_API_KEY=` → strip quotes
+1. **อ่าน API key** จาก `os.environ["KIE_API_KEY"]` (Windows User Env — set ครั้งเดียวทั่วเครื่อง)
 2. **Create task** → POST `/createTask` → เก็บ `taskId`
 3. **Poll** → GET `/recordInfo?taskId=` → วน loop ทุก 5s จนได้ `success` หรือ `fail`
 4. **Parse result** → `data.resultJson` เป็น string → `json.loads()` → `resultUrls`
