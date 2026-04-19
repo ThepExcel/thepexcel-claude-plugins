@@ -1,6 +1,16 @@
 ---
 name: deep-research
 description: Fast research that beats plain websearch — discovers what exists before searching specifics (Landscape Scan), catches recent releases within days/weeks (Recency Pulse + upstream supply chain), and runs parallel queries for multi-angle coverage. Good for everyday research and current-info questions. Supports optional `--ingest` flag to flow findings into the Obsidian LLM-Wiki as a compounding knowledge base. Use when user requests research, comparison, or "what's the latest on X". Triggers: "research", "หาข้อมูล", "compare", "what's the latest", "--ingest", "ingest to obsidian", "เก็บเข้า vault", "save to wiki". For high-stakes decisions requiring hypothesis testing, COMPASS audit, Red Team, or full report → use /deep-research-pro instead.
+scope_note: |
+  Apply for everyday research, comparisons, and "what's the latest" current-info
+  questions that benefit from Landscape Scan + Recency Pulse + parallel queries.
+  Covers 5-20 source research runs and optional Obsidian vault ingest via
+  `--ingest` flag.
+out_of_scope: |
+  Not for high-stakes research needing hypothesis testing, COMPASS audit, Red
+  Team, or formal report — use /deep-research-pro. Not for cross-industry
+  ideation without web search — use /generate-creative-ideas. Not for stress-
+  testing a single finding — use /boost-intel.
 ---
 
 # Deep Research

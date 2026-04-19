@@ -1,6 +1,14 @@
 ---
 name: shift-training-year
 description: Shift years in training data files (CSV + XLSX) by +N years — both filenames and content. Use when updating training data for a new year, "เลื่อนปี", "shift year", "update year in training data", "เปลี่ยนปีใน data", or when preparing Power BI / Excel training files for next year's course.
+scope_note: |
+  Apply when preparing ThepExcel training data (CSV + XLSX) for a new course
+  year — shifts years in filenames, quoted date/order-number strings in CSVs,
+  and Year-column values in XLSX. Creates a backup before modifying and
+  processes files in reverse-year order to avoid double-shifting.
+out_of_scope: |
+  Not for general spreadsheet edits (use /xlsx-thepexcel). Not for shifting
+  non-year date components (months, days). Does not rename XLSX files.
 ---
 
 # Shift Training Year

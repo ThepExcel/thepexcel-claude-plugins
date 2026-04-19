@@ -2,6 +2,15 @@
 name: kie-ai
 description: Execution skill สำหรับ Kie.ai API (Grok Imagine ผ่าน kie.ai proxy) — รับ prompt จาก /art-tech-engineer แล้ว gen ภาพ/วีดีโอผ่าน Kie.ai REST API รองรับ text-to-image, image-to-image, image-to-video, และ upscale ใช้เมื่อถูกระบุให้ใช้ Kie.ai โดยตรง หรือเมื่อ orchestrator delegate มา
 model: claude-sonnet-4-20250514
+scope_note: |
+  Apply when the user (or /art-engine orchestrator) explicitly selects Kie.ai as
+  the backend for Grok Imagine or Veo3 generation. Handles task
+  create/poll/download flow including file upload for image-to-video, plus the
+  separate Veo3 endpoint for text2vid / reference2vid with audio.
+out_of_scope: |
+  Not for general image/video generation requests — use /gen-image-video which
+  routes to the right backend. Not for fal.ai Grok (same model, different API)
+  — use /fal-ai. Prompt craft belongs in /art-director + /art-engine, not here.
 ---
 
 # kie-ai — Grok Imagine ผ่าน Kie.ai API

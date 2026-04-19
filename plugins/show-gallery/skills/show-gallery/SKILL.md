@@ -2,6 +2,15 @@
 name: show-gallery
 description: "Universal media gallery — browse images/videos from any local folder with copy-path, enlarge, and video playback. Reusable across all gen projects."
 model: claude-sonnet-4-20250514
+scope_note: |
+  Apply when the user wants to browse/review generated images or videos in a
+  local folder — "โชว์รูป", "show gallery", "browse folder". Builds an HTML
+  gallery with copy-path, enlarge, video playback, and serves it via
+  preview_start so พี่ระ can pick files visually.
+out_of_scope: |
+  Not for analyzing images (use /image-analysis), not for watermarking or
+  censoring (use /image-prepare), not for comparing chosen vs rejected (use
+  /image-analysis compare_sets). Gallery is a browsing aid, not a processor.
 ---
 
 # /show-gallery — Universal Media Browser

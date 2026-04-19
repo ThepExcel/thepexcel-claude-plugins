@@ -1,6 +1,16 @@
 ---
 name: explain-concepts
 description: Explains difficult concepts using master teaching methodologies (Feynman, Socratic, Cognitive Load, Dual Coding). Use when user asks to explain a concept, "I don't understand X", ELI5 requests, "what is X", "how does X work".
+scope_note: |
+  Apply when the user wants to understand a concept — "explain X", "ELI5", "what
+  is X", "how does X work", "I don't understand Y". Covers ACES formula,
+  Socratic/Feynman/Collaborative Exploration modes, level assessment, and
+  understanding checks with teach-back.
+out_of_scope: |
+  Not for solving a specific problem step-by-step — use /problem-solving. Not
+  for producing visual diagrams directly — delegate to /create-visualization.
+  Not for researching unfamiliar topics before explaining — chain
+  /deep-research first, then explain.
 ---
 
 # Concept Explainer
