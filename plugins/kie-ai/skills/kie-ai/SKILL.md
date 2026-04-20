@@ -8,7 +8,7 @@ scope_note: |
   create/poll/download flow including file upload for image-to-video, plus the
   separate Veo3 endpoint for text2vid / reference2vid with audio.
 out_of_scope: |
-  Not for general image/video generation requests — use /gen-image-video which
+  Not for general image/video generation requests — use /art-engine which
   routes to the right backend. Not for fal.ai Grok (same model, different API)
   — use /fal-ai. Prompt craft belongs in /art-director + /art-engine, not here.
 ---
